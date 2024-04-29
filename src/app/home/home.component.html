@@ -1,1 +1,18 @@
-<p>home works!</p>
+<p>Form</p>
+
+<div class="m-auto w-[50%]">
+  <form>
+    <p>Name</p>
+    <input placeholder="name" [(ngModel)]="name" name="name" />
+    <p>email</p>
+    <input [(ngModel)]="email" name="email" />
+
+    <button (click)="onSubmit()" type="submit">Submit</button>
+  </form>
+</div>
+
+<div class="mt-20" *ngIf="isSubmit">
+  <!-- <p class="text-center">name :{{ name }}</p>
+  <p class="text-center">email : {{ email }}</p> -->
+</div>
+<app-card></app-card>
